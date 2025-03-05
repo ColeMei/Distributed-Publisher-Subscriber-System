@@ -1,8 +1,4 @@
-### Report: Distributed Publisher-Subscriber System
-
-Student Name: Qiyue Mei
-
-Student ID: 1554024
+### Distributed Publisher-Subscriber System
 
 ---
 
@@ -40,16 +36,12 @@ The **Distributed Publisher-Subscriber System** is composed of several distinct 
   - **Message**: Encapsulates the message exchange protocol.
   - **Constants**: Defines various constants used throughout the publish-subscribe system, such as the Directory Service URL and other configuration parameters.
 
-![](/Users/colemei/Downloads/pubsub-UML.svg)
-
 #### 1.2 Interaction Diagram:
 
 1. **Publisher publishes a message**:
    - The publisher sends a message to its connected broker.
    - The broker receives the message, and if the topic has subscribers, it forwards the message to all brokers (inter-broker communication).
    - Each broker then notifies the subscribers connected to it.
-
-![](/Users/colemei/Downloads/pubsubsystem-Interaction-Diagram-1.svg)
 
 2. **Dynamic Broker Discovery**:
 
@@ -63,8 +55,6 @@ The **Distributed Publisher-Subscriber System** is composed of several distinct 
 * Publisher/Subscriber Discovery:  
   - Publishers and subscribers query the Directory Service to discover available brokers, select one, and register with it.
   - The selected broker informs the Directory Service of the new connection.
-
-![pubsubsystem-Interaction-Diagram-2](/Users/colemei/Downloads/pubsubsystem-Interaction-Diagram-2.svg)
 
 ### 2. **System Components**
 
